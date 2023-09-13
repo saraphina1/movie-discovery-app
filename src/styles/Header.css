@@ -1,0 +1,100 @@
+.body{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: relative;
+    color: white;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.header-fluid{
+    width: 100%;
+    height: 80vh;
+}
+.header-fluid .posterH{
+padding: 0;
+margin: 0;
+
+}
+.logo{
+    display: flex;
+    
+}
+.signIn{
+    display: flex;
+}
+.imdb{
+    display: flex;
+}
+.wrapper{
+    display: flex;
+}
+.navBody{
+    color: white;
+    margin-top: 60px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+.btn{
+    display: flex;
+}
+.logo .tv{
+    width:20%;
+    height: 20%;
+}
+.movie{
+    font-size: 18px;
+    font-family: serif;
+    margin-left: 20px;
+}
+.search{
+    position: relative;
+
+    align-items: center;
+}
+.search .input{
+    width:200%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 500px;
+    font-size: 14px;
+    
+    
+    
+}
+.input .placeholder{
+    color: white;
+    
+}
+.sign{
+font-size: 14px;
+}
+.menu{
+    width: 25%;
+    height: 25%;
+    margin-left: 20px;
+}
+.sLogo{
+    position: absolute;
+    top: 50%;
+    left: 182%;
+}
+
+.john{
+    font-size: 32px;
+    font-family: sans-serif;
+}
+.play{
+align-content: center;
+}
+.watchBtn{
+    color: white;
+    background-color:rgb(158, 27, 27) ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

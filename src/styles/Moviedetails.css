@@ -1,0 +1,51 @@
+.movieCont{
+    
+    
+    padding-left: 30px;
+}
+.movieContainer{
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.sc{
+    width: 12rem;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    border: none;
+    
+}
+.fWrap{
+    display: flex;
+    
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    
+    
+}
+.see{
+    display: flex;
+    margin-left: 80%;
+    font-size: 12px;
+    color: rgb(158, 27, 27);
+    
+}
+.icon{
+    margin-left: 3px;
+}
+.feat{
+    font-size: 20px;
+    font-weight: 800;
+}
+.cardBody{
+    padding: 0;
+    
+}
+.cardTitle{
+    font-size: 16px;
+}

@@ -1,0 +1,27 @@
+.footcontainer{
+    justify-content: center;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 70px;
+}
+.social1{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+.fLogo{
+  margin-right: 40px;
+}
+.foot{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
