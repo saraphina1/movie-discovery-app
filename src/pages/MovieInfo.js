@@ -7,7 +7,7 @@ import TVShow from "../images/TVShow.png";
 import Calender from "../images/Calendar.png";
 import Logout from "../images/Logout.png";
 // import next from "../images/next.png";
-// import Man from "..images/Man.png";
+//  import Man from "../images/Man.png";
 // import twobtn from "..images/twobtn.png";
 import { useParams } from "react-router-dom";
 
@@ -23,7 +23,7 @@ const MovieInfo=()=> {
     const [loading, setLoading]= useState(false)
     const getMoviesInfo = () => {
         fetch(
-          `https://api.themoviedb.org/3/movie/${11}?api_key=140633285692dac7eab648dad2d8a111`
+          `https://api.themoviedb.org/3/movies/${id}?api_key=140633285692dac7eab648dad2d8a111`
         )
         .then (res=>{
           if (!res.ok){
@@ -41,14 +41,15 @@ throw Error("Oops..could not fetch data")
             setError(err.message)
           })
           };
+
       useEffect(() => {
         getMoviesInfo();
         setLoading(true)
         setTimeout(()=>{
           setLoading(false)
-        }, 5000)
+        }, 1000)
         
-      },[id]);
+      },[]);
       
       
 
@@ -119,14 +120,14 @@ throw Error("Oops..could not fetch data")
               alt="movie"
               src={`https://image.tmdb.org/t/p/original${moviedetail.poster_path}`} className="img-fluid"
             />
-            <p>{moviedetail.name}</p>
-            <p>{moviedetail.realease_date}</p>
-            <p>{moviedetail.runtime}</p>
-            <p>{moviedetail.overview}</p>
+            <p data-testid= "movie-title">{moviedetail.title}</p>
+            <p data-testid= "movie-release-date">{moviedetail.realease_date}</p>
+            <p data-testid= "movie-runtime">{moviedetail.runtime}</p>
+            <p data-testid= "movie-overview">{moviedetail.overview}</p>
          
 
 </div> 
-{/* <img src={Man} alt="hero"/> */}
+{/* <img src={Man} alt="man"/>  */}
 </div>
 <div>
       

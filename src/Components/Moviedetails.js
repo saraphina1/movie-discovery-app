@@ -9,7 +9,7 @@ const Moviedetails = () => {
   const [movies, setMovies] = useState([])
   const getMovies = () => {
     fetch(
-      "https://api.themoviedb.org/3/tv/top_rated?api_key=140633285692dac7eab648dad2d8a111"
+      "https://api.themoviedb.org/3/movie/top_rated?api_key=140633285692dac7eab648dad2d8a111"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -43,19 +43,19 @@ const Moviedetails = () => {
       
       <div className="movie-container">
         
-        {movies.map((movie, index) => (
-      <Link to={`/movies/:id`} class="text-decoration-none"><Card data-testid="movie-card" className="card-container">
+        {movies ? (movies.map(movie=>
+      <Link to={`/movie/${movie.id}`} class="text-decoration-none"><Card data-testid="movie-card" className="card-container">
             <img
               data-testid= "movie-poster"
               alt="movie"
               src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
             />
             <Card.Body className="cardBody">
-              <Card.Title data-testid= "movie-title" className="cardTitle">{movie.name}</Card.Title>
-              <Card.Title data-testid= "movie-release-date" className="cardTitle">{movie.first_air_date}</Card.Title>
+              <Card.Title data-testid= "movie-title" className="cardTitle">{movie.title}</Card.Title>
+              <Card.Title data-testid= "movie-release-date" className="cardTitle">{movie.release_date}</Card.Title>
             </Card.Body>
           </Card></Link>
-        ))}
+        )):(("please wait"))}
       </div>
   
     </div>
