@@ -121,7 +121,7 @@ throw Error("Oops..could not fetch data")
               src={`https://image.tmdb.org/t/p/original${moviedetail.poster_path}`} className="img-fluid"
             />
             <p data-testid= "movie-title">{moviedetail.title}</p>
-            <p data-testid= "movie-release-date">{moviedetail.realease_date}</p>
+            <p data-testid= "movie-release-date">{moviedetail.release_date}</p>
             <p data-testid= "movie-runtime">{moviedetail.runtime}</p>
             <p data-testid= "movie-overview">{moviedetail.overview}</p>
          
