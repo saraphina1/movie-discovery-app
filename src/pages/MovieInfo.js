@@ -23,7 +23,7 @@ const MovieInfo=()=> {
     const [loading, setLoading]= useState(false)
     const getMoviesInfo = () => {
         fetch(
-          `https://api.themoviedb.org/3/movies/${id}?api_key=140633285692dac7eab648dad2d8a111`
+          `https://api.themoviedb.org/3/movie/${id}?api_key=140633285692dac7eab648dad2d8a111`
         )
         .then (res=>{
           if (!res.ok){
