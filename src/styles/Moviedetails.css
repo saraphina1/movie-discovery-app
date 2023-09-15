@@ -3,20 +3,27 @@
     
     padding-left: 30px;
 }
-.movieContainer{
+.movie-container{
     padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    cursor: pointer;
-    box-sizing: border-box;
+    
+
+    
 }
-.sc{
+.card-container:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+.card-container{
     width: 12rem;
     height: auto;
     margin-right: 30px;
     margin-bottom: 40px;
     border: none;
+    position: relative;
+    transition: transform 0.2s;
     
 }
 .fWrap{
@@ -33,8 +40,9 @@
     margin-left: 80%;
     font-size: 12px;
     color: rgb(158, 27, 27);
-    
-}
+ 
+ }   
+
 .icon{
     margin-left: 3px;
 }
@@ -48,4 +56,14 @@
 }
 .cardTitle{
     font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px){
+.see{
+    margin-left: 40%;
+}
+
+
+
 }

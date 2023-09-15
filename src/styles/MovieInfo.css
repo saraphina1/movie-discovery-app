@@ -1,0 +1,112 @@
+.movieBox{
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    
+}
+.movieHome{
+    display: flex;
+    justify-content: center;
+}
+.MovieInfo-fluid{
+    padding: 0;
+    margin-left: 30px;
+    padding-top: 5px;
+    
+
+}
+.tv{
+    width: 20px;
+    height: 20px;
+}
+.movieBox2{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.movieBox{
+    padding-bottom: 60px;
+}
+.sideLogo{
+    width:15px ;
+    height: 15px;
+}
+.barText{
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.movieHome{
+    margin-bottom: 30px;
+    
+
+}
+.first-fluid{
+    padding: 0;
+    text-align: center;
+    width: fit-content;
+    /* width: 10%;
+    height: 100%; */
+    border: 1px solid black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+} 
+.second{
+    padding: 0;
+}
+body{
+    padding: 0;
+    overflow-x: hidden;
+}
+.sideBtn{
+    width: 100px;
+    height: 180px; 
+    border: 1px solid rgb(187, 74, 74);
+    border-radius: 5px;
+    
+}
+.btnText{
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: left;
+    
+}
+.btnT{
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: left;
+    font-weight:1px;
+    
+}
+.innerBtn{
+    font-size: 11px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: none;
+    color: rgb(187, 74, 74);
+    background-color: pink;
+
+}
+.movieHome2{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+.movieH{
+    margin-bottom: 30px;
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgb(185, 56, 56);;
+}
+.barT{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: rgb(185, 56, 56);
+    font-weight: 900px;
+    
+}
+

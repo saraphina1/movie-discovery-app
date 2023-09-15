@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap/Image"; 
 import "../styles/Header.css";
 import PosterH from "../images/PosterH.png";
 import tv from "../images/tv.png";
@@ -10,6 +11,7 @@ import play from "../images/Play.png";
 
 function Header() {
   return (
+    <div>
     <div
       style={{ backgroundImage: `url(${PosterH})` }}
       className="header-fluid"
@@ -20,7 +22,7 @@ function Header() {
           <h4 className="movie">MovieBox</h4>
         </div>
         <div className="search">
-          <input
+          <input mx-auto
             type="text"
             placeholder="What do you want to watch?"
             className="input"
@@ -39,12 +41,12 @@ function Header() {
         </h1>
         <div className="wrapper">
           <div imdb>
-            <img src={IMDB} alt="/" />
-            <span>86.0 / 100</span>
+            <img src={IMDB} alt="/"/>
+            <span className="ml-5">86.0 / 100</span>
           </div>
           <div className="tomato">
             <img src={tomato} alt="/" />
-            <span>90%</span>
+            <span m>90%</span>
           </div>
         </div>
         <h4 className="jWick">
@@ -66,7 +68,7 @@ function Header() {
           </div>
         </div>
       </div>
-    
+    </div>
   );
 }
 
