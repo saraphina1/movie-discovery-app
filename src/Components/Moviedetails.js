@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Moviedetails.css";
 import Card from "react-bootstrap/Card";
 import Icon from "../images/Icon.png";
+import Favorite from "../images/Favorite.png";
 
 import { Link } from "react-router-dom";
 const Moviedetails = () => {
@@ -45,6 +46,7 @@ const Moviedetails = () => {
         
         {movies ? (movies.map(movie=>
       <Link to={`/movie/${movie.id}`} class="text-decoration-none"><Card data-testid="movie-card" className="card-container">
+            <img src={Favorite} alt="fav" className="fav"/>
             <img
               data-testid= "movie-poster"
               alt="movie"

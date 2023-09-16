@@ -11,9 +11,9 @@ function Home() {
       <Header />
       
       <div>
-        <Moviedetails/>
+         <Moviedetails/> 
       </div>
-      <Footer/>
+      { <Footer/> }
     </div>
   );
 }
