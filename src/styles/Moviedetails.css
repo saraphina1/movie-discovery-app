@@ -1,11 +1,13 @@
 .movieCont{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
     
-    
-     margin-left: 50px; 
-     margin-right: 40px;
+     /* margin-left: 50px; 
+     margin-right: 40px; */
 }
 .movie-container{
-      
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -18,17 +20,20 @@
     transform:scale(1.1);
 }
 .card-container{
+    object-fit: cover;
     position: relative;
-    width: 12rem;
+    width: 15rem;
     height: auto;
-    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    
     margin-bottom: 40px;
     border: none;
     position: relative;
     transition: transform 0.2s;
     
 }
-.fWrap{
+/* .fWrap{
     display: flex;
     
     padding-top: 30px;
@@ -36,19 +41,29 @@
     font-family: sans-serif;
     
     
+} */
+.fCont{
+    display: flex;
+    right: 0;
 }
 .see{
     display: flex;
-    margin-left: 79%; 
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 2rem;
     font-size: 12px;
     color: rgb(158, 27, 27);
  
  }   
 
 .icon{
+    width: 8px;
+    padding-bottom: 0.5rem;
+    align-items: center;
     margin-left: 3px;
 }
 .feat{
+    padding-top: 2rem;
     font-size: 20px;
     font-weight: 800;
 }
@@ -71,15 +86,33 @@
     fill: red;
 }
 
- @media only screen and (max-width: 600px){
- .see{
-     margin-left: 40%; 
-} 
+ @media only screen and (max-width: 450px){
+ 
+
 .movie-container{
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    
 }
 .fWrap{
     flex-direction: column;
+}
+.card-container{
+    justify-content: center;
+    
+}
+.see{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.feat{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 }  

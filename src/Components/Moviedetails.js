@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Icon from "../images/Icon.png";
 import Favorite from "../images/Favorite.png";
 
+
 import { Link } from "react-router-dom";
 const Moviedetails = () => {
   const [movies, setMovies] = useState([])
@@ -32,14 +33,14 @@ const Moviedetails = () => {
 
   return (
     <div className="movieCont">
-      <div className="fWrap">
+      
         <div className="feat">Featured Movie</div>
         <div className="see">
-          <div>See more </div>
-          <div className="icon">
+          <p>See more </p>
+          <span className="icon">
             <img src={Icon} alt="icon" className="icon" />
-          </div>
-        </div>
+          </span>
+        
       </div>
       
       <div className="movie-container">
