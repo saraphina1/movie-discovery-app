@@ -1,3 +1,6 @@
+*{
+    font-family: "poppins", sans-serif;
+}
 .movieBox{
     justify-content: center;
     display: flex;
@@ -8,12 +11,37 @@
     display: flex;
     justify-content: center;
 }
-.MovieInfo-fluid{
-    padding: 0;
-    margin-left: 30px;
-    padding-top: 5px;
+.MovieInfo{
+
+   width: 100vw;
+   max-width: 70rem;
+   height: 100vh;
+   object-fit: cover;
+   margin: 0 auto;
+   padding-top: 1rem;
+   padding: 1rem 2rem;
+   
     
 
+}
+.description{
+
+    width: 100vw;
+    max-width: 60rem;
+}
+.movieDescript{
+margin-top: 2rem;
+}
+.row{
+    height: 100vh;
+    
+}
+.img{
+    
+    
+    width: 100vw;
+    max-width: 60rem;
+    height: 40rem;
 }
 .tv{
     width: 20px;
@@ -27,10 +55,17 @@
     padding-bottom: 60px;
 }
 .sideLogo{
+
+    text-decoration: none;
     width:15px ;
     height: 15px;
 }
-.barText{
+.Link{
+    text-decoration: none;
+}
+  .barText{
+    text-decoration: none;
+    color: black;
     font-size: 14px;
     font-family: sans-serif;
     margin-left: 10px;
@@ -108,5 +143,9 @@ body{
     color: rgb(185, 56, 56);
     font-weight: 900px;
     
+}
+
+@media screen and (max-width: 700px){
+
 }
 

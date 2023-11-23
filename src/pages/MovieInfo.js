@@ -6,6 +6,7 @@ import Projector from "../images/Projector.png";
 import TVShow from "../images/TVShow.png";
 import Calender from "../images/Calendar.png";
 import Logout from "../images/Logout.png";
+import { Link } from "react-router-dom";
 // import next from "../images/next.png";
 
 // import twobtn from "..images/twobtn.png";
@@ -48,20 +49,20 @@ const MovieInfo = () => {
   }, []);
 
   return (
-    <div className="MovieInfo-fluid">
+    <div className="MovieInfo">
       {loading ? (
         <FadeLoader color={"#D0021B"} loading={loading} size={150} />
       ) : (
-        <div class="row">
+        <div className="row">
           <div className="col-sm-4  first-fluid">
             <div className="movieBox">
               <img src={tv} alt="tv" className="tv" />
               <h4 className="movieBox2">MovieBox</h4>
             </div>
-            <div className="movieHome">
+            <Link to="/" className="movieHome">
               <img src={Home} alt="home" className="sideLogo" />
               <h5 className="barText">Home</h5>
-            </div>
+            </Link>
             <div className="movieH">
               <img src={Projector} alt="home" className="sideLogo" />
               <h5 className="barT">Movies</h5>
@@ -101,19 +102,21 @@ const MovieInfo = () => {
           <div className="col-8 second">
             <div>
               {error && <div>{error}</div>}
-              <div className="co col-lg-8 col-md-6 col-sm-6">
+              <div className="description col-lg-8 col-md-6 col-sm-6">
                 <img
                   data-testid="movie-poster"
                   alt="movie"
                   src={`https://image.tmdb.org/t/p/original${moviedetail.poster_path}`}
-                  className="img-fluid"
+                  className="img"
                 />
-                <p data-testid="movie-title">{moviedetail.title}</p>
+                <div className="movieDescript">
+                <p data-testid="movie-title">Title: {moviedetail.title}</p>
                 <p data-testid="movie-release-date">
-                  {moviedetail.release_date}
+                  Release Date: {moviedetail.release_date}
                 </p>
-                <p data-testid="movie-runtime">{moviedetail.runtime}</p>
-                <p data-testid="movie-overview">{moviedetail.overview}</p>
+                <p data-testid="movie-runtime">Runtime: {moviedetail.runtime}</p>
+                <p data-testid="movie-overview">Overview<br/>{moviedetail.overview}</p>
+                </div>
               </div>
             </div>
             <div></div>
